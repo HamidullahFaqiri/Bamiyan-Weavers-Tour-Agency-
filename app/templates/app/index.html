@@ -1,0 +1,36 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="jumbotron">
+    <p style="background-color: white; margin: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; border: groove">
+
+  <table border="3"; cellpadding="10" bordercolor="white">
+   <tr><td><h2>ТУРОПЕРАТОР И ТУРАГЕНТСТВО В ПСКОВЕ </h2>
+ 
+</div></tr></table>
+
+<div class="row">
+    <div class="col-md-2">
+        <a  href="{% url 'Pskov' %}"><h3>Туры в Псков</h3></a>
+        <p><img src="{% static 'app/image/inbox-image.jpg' %}" width="480" /></p>
+    </a></div>
+    <div class="col-md-2">
+        <a href="{% url 'Pskovichi' %}"><h3>Туры для Псковичей</h3></a>
+       <p><img src="{% static 'app/image/inbox-image 2.jpg' %}" width="480" /></p>
+       
+</a></div><br />
+    <div class="col-md-33">
+            <a  href="https://www.coral.ru/">
+              <img src="{% static 'app/image/logo-coral-travel.png' %}" width="100" height="40" alt="coral logo">
+            </a>
+            <a  href="https://www.tui.ru/">
+              <img src="{% static 'app/image/tuilogo.png' %}" width="100" height="40" alt="tui logo">
+            </a>
+          
+        
+    </div>
+    
+
+{% endblock %}
+
